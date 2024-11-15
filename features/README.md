@@ -1,22 +1,21 @@
 # features
 ## 데이터 불러오는 법
 * 클로즈드 월드용 데이터셋
-  * df=pd.read_csv('mon_features.csv') :19000
+  * df=pd.read_csv('mon_features.csv') : 19000
+  * df=pd.read_cvs('mon_labels.cvs') : 19000 
 * 오픈 월드용 데이터셋
   * df=pd.read_csv('unmon_features.csv') : 10000
   * df=pd.read_csv('unmon3000_features.csv') : 3000, colab 리소스 부족할 시 사용
 
 * 참고
   * 클로즈드 월드 데이터 사용해서 RF한 결과치
-![alt text](image.png)
+![alt text](imagev2.png)
 ---
-## Candidat법 features  
+## Candidat features  
 * 추후 수정해야 할 부분
   * 피쳐 순서, 숫자 밀림....
   * The distinctive burstiness of traffic 제대로 구현
   * 위 피쳐 값을 토대로 패킷 내 특정 데이터에만 가중치를 줘서 구하는 avg 피쳐도 구현하면 괜찮을 것 같다.
-  * 주석 친절하게 수정
-  * 코드 가독성 높이기
 
 ---
 ### Total packets
@@ -69,8 +68,9 @@
   * outpkt_sum_firstn
   * outpkt_num_firttn
 
-### etc.  
+### etc. 
 23. Analyze packets per second.
+  * 수정중
   * pkt_avg_sec
   * pkt_std_sec
   * pkt_max_sec
