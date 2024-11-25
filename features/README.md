@@ -9,14 +9,9 @@
 
 * 참고
   * 클로즈드 월드 데이터 사용해서 RF한 결과치
-![alt text](imagev2.png)
+![alt text](image.png)
 ---
 ## Candidat features  
-* 추후 수정해야 할 부분
-  * 피쳐 순서, 숫자 밀림....
-  * The distinctive burstiness of traffic 제대로 구현
-  * 위 피쳐 값을 토대로 패킷 내 특정 데이터에만 가중치를 줘서 구하는 avg 피쳐도 구현하면 괜찮을 것 같다.
-
 ---
 ### Total packets
 1. Total number of packets.
