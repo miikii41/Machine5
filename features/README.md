@@ -1,15 +1,15 @@
 # features
-## 데이터 불러오는 법
-* 클로즈드 월드용 데이터셋
-  * df=pd.read_csv('mon_features.csv') : 19000
-  * df=pd.read_cvs('mon_labels.cvs') : 19000 
-* 오픈 월드용 데이터셋
-  * df=pd.read_csv('unmon_features.csv') : 10000
-  * df=pd.read_csv('unmon3000_features.csv') : 3000, colab 리소스 부족할 시 사용
+* datasets for closed world model
+  * mon_features.csv : 19000
+  * mon_labels.cvs : 19000 
+* datasets for open world model
+  * unmon_features.csv : 10000
+  * unmon3000_features.csv : 3000
 
-* 참고
-  * 클로즈드 월드 데이터 사용해서 RF한 결과치
+* Feature Importance Score
 ![alt text](image.png)
+* Feature Correlation
+![alt text](image2.png)
 ---
 ## Candidat features  
 ---
@@ -64,8 +64,7 @@
   * outpkt_num_firttn
 
 ### etc. 
-23. Analyze packets per second.
-  * 수정중
+~~23. Analyze packets per second~~
   * pkt_avg_sec
   * pkt_std_sec
   * pkt_max_sec
@@ -76,8 +75,14 @@
   * outpkt_std_sec
   * outpkt_max_sec
 24. The distinctive burstiness of traffic
-  * 추후 구현
-
+  * inpkt_std_burst 
+  * inpkt_max_burst 
+  * inpkt_avg_burst
+  * inpkt_count_burst 
+  * outpkt_std_burst 
+  * outpkt_max_burst 
+  * outpkt_avg_burst 
+  * outpkt_count_burst
 
 
 
