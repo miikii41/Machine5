@@ -1,8 +1,8 @@
 # features
-* datasets for closed world model
+* datasets for the closed world model
   * mon_features.csv : 19000
   * mon_labels.cvs : 19000 
-* datasets for open world model
+* datasets for the open world model
   * unmon_features.csv : 10000
   * unmon3000_features.csv : 3000
 
