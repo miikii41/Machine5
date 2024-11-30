@@ -24,7 +24,7 @@
 'outpkt_count_burst', 'outpkt_avg', 'total_sum_dir', 'total_avg', 'inpkt_num', 'inpkt_avg', 'inpkt_sum', 'inpkt_num_frac_total', 'inpkt_avg_ordering', 'inpkt_std_ordering'
 (top 10)
 * Feature Correlation
-![alt text](./feature_information/unmonimage1.png)
+![alt text](./feature_information/unmonimage.png)
 'total_sum_dir', 'inpkt_num', 'inpkt_sum', 'inpkt_avg_ordering', 'inpkt_std_ordering'
 (outpkt_count_burst, >0.6)
 
