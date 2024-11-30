@@ -6,10 +6,39 @@
   * unmon_features.csv : 10000
   * unmon3000_features.csv : 3000
 
+---
+## Findings
+---
+### mon_features
 * Feature Importance Score
-![alt text](image.png)
+![alt text](./feature_information/monimage.png)
+'outpkt_avg_ordering', 'outpkt_std_ordering', 'outpkt_num', 'inpkt_avg_ordering', 'inpkt_num'
+(top 5)
 * Feature Correlation
-![alt text](image2.png)
+![alt text](./feature_information/monimage2.png)
+'total_num', 'total_sum_dir', 'inpkt_num', 'inpkt_avg_ordering', 'inpkt_std_ordering', 'outpkt_num', 'outpkt_avg_ordering', 'outpkt_std_ordering', 'inpkt_count_burst', 'outpkt_count_burst'
+(label, >0.1)
+
+### unmon_features
+* Feature Importance Score
+'outpkt_count_burst', 'outpkt_avg', 'total_sum_dir', 'total_avg', 'inpkt_num', 'inpkt_avg', 'inpkt_sum', 'inpkt_num_frac_total', 'inpkt_avg_ordering', 'inpkt_std_ordering'
+(top 10)
+* Feature Correlation
+![alt text](./feature_information/unmonimage1.png)
+'total_sum_dir', 'inpkt_num', 'inpkt_sum', 'inpkt_avg_ordering', 'inpkt_std_ordering'
+(outpkt_count_burst, >0.6)
+
+### combined_features
+* Feature Importance Score
+![alt text](./feature_information/comimage.png)
+'outpkt_avg_ordering', 'outpkt_std_ordering', 'inpkt_num', 'inpkt_avg_burst' 'inpkt_avg_ordering', 'outpkt_num', 'outpkt_avg_burst', 'inpkt_std_ordering', 'total_num', 'outpkt_num_frac_inpkt'
+(top 10)
+* Feature Correlation
+![alt text](./feature_information/comimage2.png)
+'inpkt_sum_firstn', 'outpkt_sum_firstn'
+(label, >0.1)
+
+more informations are in ./feature_information
 ---
 ## Candidat features  
 ---
@@ -17,7 +46,7 @@
 1. Total number of packets.
 2. Average direction of packets. (i.e., Total sum of packets sign)
 3. Average timestamp of packets.
-4. ~~Frequency distributions of packet lengths.~~ 전부 똑같다
+4. ~~Frequency distributions of packet lengths.~~ 
   * total_num
   * total_sum_dir
   * total_avg
