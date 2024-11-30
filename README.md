@@ -1,10 +1,10 @@
 # Machine5
 [Contents](#toc)
 
-[1. Project Structure](##Project-Structure)  
-[2. Overview](##Overview)  
-[3. Usage](##Usage)  
-[4. Contributors](##Contributors)  
+[1. Project Structure](#Project-Structure)  
+[2. Overview](#Overview)  
+[3. Usage](#Usage)  
+[4. Contributors](#Contributors)  
 
 
 
