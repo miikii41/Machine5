@@ -1,10 +1,20 @@
 # Machine5
-[Contents](#toc)
+1. 피쳐 리드미 수정해야됨
+2. 결론부분 그래프 넣고 해석 넣어야됨
+3. 실행방법
 
-[1. Project Structure](#Project-Structure)  
-[2. Overview](#Overview)  
-[3. Usage](#Usage)  
-[4. Contributors](#Contributors)  
+
+
+
+## Contents
+* [Project Structure](#project-structure)  
+* [Overview](#overview)  
+  * [Project Description](#project-description)  
+  * [Hypothesis, Scenario](#hypothesis-scenario)  
+  * [Results](#results)  
+  * [Strong Point](#strong-point)  
+* [How to Run](#how-to-run)  
+* [Contributors](#contributors)  
 
 
 
@@ -17,51 +27,62 @@
 <div markdown="1">
 
   ```
-    Machine5
-    ┣ Closed
-    ┃ ┣ baseline.ipynb
-    ┃ ┣ Closed_RF_old.ipynb
-    ┃ ┣ Closed_RF_selected10.ipynb
-    ┃ ┣ Closed_RF.ipynb
-    ┃ ┗ Closed_SVM.ipynb
-    ┣ Open_Binary
-    ┃ ┣ baseline
-    ┃ ┃ ┗ Open_Binary_KNN.ipynb
-    ┃ ┣ binary_labels.csv
-    ┃ ┣ Open_Binary_SVM.ipynb
-    ┃ ┣ Open_Binary_RF.ipynb
-    ┃ ┣ Open2_Binary_RF_selected6.ipynb
-    ┃ ┗ Open2_Binary_RF_selected12.ipynb
-    ┣ Open_Multi
-    ┃ ┣ Open_Multi_RF.ipynb
-    ┃ ┣ Open2_Multi_RF.ipynb
-    ┃ ┣ Open_Multi_SVM.ipynb
-    ┃ ┗ final_labels.csv
-    ┣ features
-    ┃ ┣ feature_information
-    ┃ ┃ ┣ combined_feature_information.ipynb
-    ┃ ┃ ┣ comimage.png
-    ┃ ┃ ┣ comimage2.png
-    ┃ ┃ ┣ mon_feature_information.ipynb
-    ┃ ┃ ┣ monimage.png
-    ┃ ┃ ┣ monimage2.png
-    ┃ ┃ ┣ unmon_feature_information.ipynb
-    ┃ ┃ ┗ unmonimage.png
-    ┃ ┣ modified_datasets
-    ┃ ┃ ┣ feature_generator.ipynb
-    ┃ ┃ ┣ mon_features.csv
-    ┃ ┃ ┣ mon_features_old.csv
-    ┃ ┃ ┣ mon_labels.csv
-    ┃ ┃ ┣ unmon3000_features.csv
-    ┃ ┃ ┣ unmon3000_features_old.csv
-    ┃ ┃ ┣ unmon_features.csv
-    ┃ ┃ ┗ unmon_features_old.csv
-    ┃ ┣ original_datasets
-    ┃ ┃ ┣ mon_standard.pkl
-    ┃ ┃ ┣ unmon_standard10.pkl
-    ┃ ┃ ┗ unmon_standard10_3000.pkl
-    ┃ ┗ README.md
-    ┗ README.md
+Machine5
+ ┣ Closed
+ ┃ ┣ Closed_RF.ipynb
+ ┃ ┣ Closed_RF_old.ipynb
+ ┃ ┣ Closed_RF_selected10.ipynb
+ ┃ ┣ Closed_SVM.ipynb
+ ┃ ┗ baseline.ipynb
+ ┣ Open_Binary
+ ┃ ┣ baseline
+ ┃ ┃ ┗ Open_Binary_KNN.ipynb
+ ┃ ┣ Open2_Binary_RF_selected12.ipynb
+ ┃ ┣ Open2_Binary_RF_selected6.ipynb
+ ┃ ┣ Open_Binary_RF.ipynb
+ ┃ ┣ Open_Binary_SVM.ipynb
+ ┃ ┗ binary_labels.csv
+ ┣ Open_Multi
+ ┃ ┣ Open2_Multi_RF.ipynb
+ ┃ ┣ Open_Multi_RF.ipynb
+ ┃ ┣ Open_Multi_SVM.ipynb
+ ┃ ┗ final_labels.csv
+ ┣ datasets
+ ┃ ┣ binary_labels.csv
+ ┃ ┣ final_labels.csv
+ ┃ ┣ mon_features.csv
+ ┃ ┣ mon_features_old copy.csv
+ ┃ ┣ mon_features_old.csv
+ ┃ ┣ mon_labels.csv
+ ┃ ┣ unmon3000_features.csv
+ ┃ ┣ unmon3000_features_old.csv
+ ┃ ┣ unmon_features.csv
+ ┃ ┗ unmon_features_old.csv
+ ┣ features
+ ┃ ┣ feature_information
+ ┃ ┃ ┣ combined_feature_information.ipynb
+ ┃ ┃ ┣ comimage.png
+ ┃ ┃ ┣ comimage2.png
+ ┃ ┃ ┣ mon_feature_information.ipynb
+ ┃ ┃ ┣ monimage.png
+ ┃ ┃ ┣ monimage2.png
+ ┃ ┃ ┣ unmon_feature_information.ipynb
+ ┃ ┃ ┗ unmonimage.png
+ ┃ ┣ modified_datasets
+ ┃ ┃ ┣ feature_generator.ipynb
+ ┃ ┃ ┣ mon_features.csv
+ ┃ ┃ ┣ mon_features_old.csv
+ ┃ ┃ ┣ mon_labels.csv
+ ┃ ┃ ┣ unmon3000_features.csv
+ ┃ ┃ ┣ unmon3000_features_old.csv
+ ┃ ┃ ┣ unmon_features.csv
+ ┃ ┃ ┗ unmon_features_old.csv
+ ┃ ┣ original_datasets
+ ┃ ┃ ┣ mon_standard.pkl
+ ┃ ┃ ┣ unmon_standard10.pkl
+ ┃ ┃ ┗ unmon_standard10_3000.pkl
+ ┃ ┗ README.md
+ ┗ README.md
   ```
 </div>
 </details>
@@ -71,57 +92,63 @@
 
 
 ## Overview
-### 프로젝트 설명
-  * 주어진 데이터셋과 요구되는 산출물, 제약조건 간략제시
+### Project Description
+* **Given data**: mon_standard.pkl (data from monitored websites), unmon_standard10.pkl (data from unmonitored websites).
+* **Project Purpose**: Based on the given data, create a model that makes the following predictions; label the monitored website instances with {0, 1, 2, ..., 94} and the unmonitored website instances with the label '-1'.
+* **Constraints**
+  * The model must be selected from LR, NB, SVM, DT, GB, k-NN, Clustering, and NN.
+  * Metric must use the following: Accuracy (Closed-World), True positive rate, False positive rate, precision, PR curve, and ROC (Opern-World).
 
-### 가설
-  * 데이터  
-    [./features/README.md](https://github.com/440g/Machine5/blob/main/features/README.md) 참조
 
-  * 클로즈드, 오픈-바이너리  
-    클로즈드 > mon data로 멀티분류(모델 선택기준: 베이스라인 이용)  
-    오픈 바이너리 > mon+unmon data로 이진분류 
+### Hypothesis, Scenario
+  * **Candidate Features** 
+    * Details: [./features/README.md](https://github.com/440g/Machine5/blob/main/features/README.md)
 
-  * 오픈-멀티 시나리오 1:    
-    오픈 멀티 > mon+unmon data로 멀티분류  
+  * **Closed-Wold Multi, Open-World Binary Classification**
+    * Use a baseline model to select the best model that performs well on the given data.
+    * Only features with high importance and correlation coefficients are selected for training to avoid overfitting and speed up training.
+    * We use data preprocessing and hyperparameter tuning to improve the accuracy of the selected model.   
 
-  * 오픈-멀티 시나리오 2: 
-    오픈 멀티 > 오픈 바이너리 분류 후 오픈 멀티 분류 적용(데이터셋의 fingings 고려)  
+  * The open-world multi classification followed two scenarios.
 
-### 결과
-  * 클로즈드  
-    내용
+  * **Scenario 1**  
+    * The model is selected by considering the baseline of multi-classification in the closed world and the baseline of binary classification in the open world.
+    * Combine data for monitored and unmonitored instances.
+    * Using the selected model, predict the label{-1, 0, 1, ..., 94} for the combined data.
 
-  * 오픈-바이너리
-    내용
+  * **Scenario 2**  
+    * Preprocess the data without classification, taking into account the different feature importance and 2. correlation coefficients between monitored and unmonitored data.
+    * Train a closed multi-classification model and an open binary classification model for each data separately.
+    * Perform prediction of open binary classification model > Extract the prediction result > Perform multi-classification based on this prediction result.  
 
-  * 오픈-멀티
-    시나리오 1: 모든 데이터를 합쳐서 분류
-    각각의 분류 특성이 다른걸 반영하지 못해서 낮은 정확도를 보인다.  
-    시나리오 2: 바이너리->멀티 예측  
-    데이터셋 특성을 잘 를영하였고 정확도가 비교적 높게 나왔다.  
+### Results
+  * **Closed-Wold Multi Classification**
+  * **Open-World Binary Classification**
+  * **Scenario 1**  
+    * Multi-classification and binary classification do not consider the importance of the features used, resulting in relatively low accuracy.
+  * **Scenario 2** 
+    * The criteria not considered in Scenario 1 were applied, resulting in a relatively high accuracy. 
     
-    그러나 두 멀티분류 모두 데이터셋의 불균형(-1:나머지 95개 클래스 = 10000:19000)이 매우 심해서 ROC, PR스코어가 매우 낮게 나왔다.  
+  * Both open world multi classifications resulted in very low ROC and PR scores because the dataset was highly imbalanced (-1:remaining 95 classes = 10000:19000). 
 
-    해결방안: Oversampling/Undersampling 등의 기법으로 클래스 균형 조정이 필요해 보인다.
+  * Solution: Techniques such as oversampling/undersampling can be used to balance the classes. Additionally, it is possible to consider weighting samples with smaller clusters.
 
-### 기여? 의의? contribution?  
-  * 데이터셋에 대한 논문들의 발견에 근거하여 피쳐 산출   
-  * 모델의 예측 목표를 고려해 피쳐 중요도 계산 및 selection 수행  
-  * 데이터셋에 대한 이해를 근거로 모델 선정 + 베이스라인 모델수 사용하여 실험적 성능 또한 재확인  
-  * 모든 분류에 있어 최적 모델은 정확도 80 이상 달성  
-  * 데이터셋 불균형 문제에 의한 ROC, PR스코어 하락 문제 원인 파악, 해결방안 제시  
-
-
+### Strong Point
+  * Calculate features based on findings from prior research papers for a given classification objective and dataset   
+  * Calculate feature importance, correlation coefficients, and selection considering the purpose of the model  
+  * After selecting a model based on our understanding of the dataset, we implement a baseline model to experimentally verify its practical performance.  
+  * Optimal model achieves accuracy of 80 or higher for open world(final) classifications  
+  * Identify the cause of ROC and PR score decline due to dataset imbalance issues and propose solutions  
 
 
 
 
 
-## Usage
-* 파일 수가 많아서 깃헙 레포를 복제해서 로컬로 돌리는 방식을 제시할지   
-* 아니면 그냥 데이터셋 다운받아서 코랩으로 쓰는 방식을 제시할 지 고민중  
-* (몇몇 코드들 실행방식에 따라 데이터 로드하는 부분 고쳐야 함, 아마 후자로 할 것 같습니다)
+
+
+## How to Run 
+* 전반적인 파일 수정 필요(데이터셋 다운로드 부분)>완료
+
 
 
 
@@ -132,3 +159,17 @@
 |:---:|:---:|:---:|:---:|:---:|
 |Project Management|Open_Binary Model Training & Optimization|Closed Model Training & Optimization|Open_Multi Model Training & Optimization|Result Analysis|
 |Feature Engineering|Model Evaluation|Model Evaluation|Model Evaluation|Project Presentation|
+---
+<details>
+<summary>Created the following files; If something goes wrong, contact us!</summary>
+<div markdown="1">
+
+|All|[Open_Binary](https://github.com/440g/Machine5/tree/main/Open_Binary)|[Closed](https://github.com/440g/Machine5/tree/main/Closed)|[Open_Multi](https://github.com/440g/Machine5/tree/main/Open_Multi)| -|
+|:---:|:---:|:---:|:---:|:---:|
+| [features](https://github.com/440g/Machine5/tree/main/features)| [Open_Binary/baseline](https://github.com/440g/Machine5/tree/main/Open_Binary/baseline)| Closed_RF_old.ipynb| Open_Multi_RF.ipynb|  |
+| Closed/{baseline, Closed_RF, Closed_RF_selected10}.ipynb| Open_Binary_RF.ipynb| Closed_SVM.ipynb| Open_Multi_SVM.ipynb|  |
+| Open_Binary/{Open2_Binary_RF_selected6, Open2_Binary_RF_selected12}.ipynb| Open_Binary_SVM.ipynb|  |  |  |
+| Open2_Multi_RF.ipynb| Open_Binary_KNN.ipynb|  |  |  |
+
+</div>
+</details>
