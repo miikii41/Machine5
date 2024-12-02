@@ -1,7 +1,5 @@
 # Machine5
-1. 피쳐 리드미 수정해야됨
-2. 결론부분 그래프 넣고 해석 넣어야됨
-3. 실행방법
+
 
 
 
@@ -13,7 +11,11 @@
   * [Hypothesis, Scenario](#hypothesis-scenario)  
   * [Results](#results)  
   * [Strong Point](#strong-point)  
-* [How to Run](#how-to-run)  
+* [How to Run](#how-to-run)   
+  * [git clone](#1-open-and-run-how_to_runipynb-to-clone-this-repository)  
+  * [Feature generation](#2-feature-generation)  
+  * [Scenario 1](#3-scenario-1)  
+  * [Scenario 2](#4-scenario-2)   
 * [Contributors](#contributors)  
 
 
@@ -27,62 +29,52 @@
 <div markdown="1">
 
   ```
-Machine5
- ┣ Closed
- ┃ ┣ Closed_RF.ipynb
- ┃ ┣ Closed_RF_old.ipynb
- ┃ ┣ Closed_RF_selected10.ipynb
- ┃ ┣ Closed_SVM.ipynb
- ┃ ┗ baseline.ipynb
- ┣ Open_Binary
- ┃ ┣ baseline
- ┃ ┃ ┗ Open_Binary_KNN.ipynb
- ┃ ┣ Open2_Binary_RF_selected12.ipynb
- ┃ ┣ Open2_Binary_RF_selected6.ipynb
- ┃ ┣ Open_Binary_RF.ipynb
- ┃ ┣ Open_Binary_SVM.ipynb
- ┃ ┗ binary_labels.csv
- ┣ Open_Multi
- ┃ ┣ Open2_Multi_RF.ipynb
- ┃ ┣ Open_Multi_RF.ipynb
- ┃ ┣ Open_Multi_SVM.ipynb
- ┃ ┗ final_labels.csv
- ┣ datasets
- ┃ ┣ binary_labels.csv
- ┃ ┣ final_labels.csv
- ┃ ┣ mon_features.csv
- ┃ ┣ mon_features_old copy.csv
- ┃ ┣ mon_features_old.csv
- ┃ ┣ mon_labels.csv
- ┃ ┣ unmon3000_features.csv
- ┃ ┣ unmon3000_features_old.csv
- ┃ ┣ unmon_features.csv
- ┃ ┗ unmon_features_old.csv
- ┣ features
- ┃ ┣ feature_information
- ┃ ┃ ┣ combined_feature_information.ipynb
- ┃ ┃ ┣ comimage.png
- ┃ ┃ ┣ comimage2.png
- ┃ ┃ ┣ mon_feature_information.ipynb
- ┃ ┃ ┣ monimage.png
- ┃ ┃ ┣ monimage2.png
- ┃ ┃ ┣ unmon_feature_information.ipynb
- ┃ ┃ ┗ unmonimage.png
- ┃ ┣ modified_datasets
- ┃ ┃ ┣ feature_generator.ipynb
- ┃ ┃ ┣ mon_features.csv
- ┃ ┃ ┣ mon_features_old.csv
- ┃ ┃ ┣ mon_labels.csv
- ┃ ┃ ┣ unmon3000_features.csv
- ┃ ┃ ┣ unmon3000_features_old.csv
- ┃ ┃ ┣ unmon_features.csv
- ┃ ┃ ┗ unmon_features_old.csv
- ┃ ┣ original_datasets
- ┃ ┃ ┣ mon_standard.pkl
- ┃ ┃ ┣ unmon_standard10.pkl
- ┃ ┃ ┗ unmon_standard10_3000.pkl
- ┃ ┗ README.md
- ┗ README.md
+📦Machine5
+ ┣ 📂Closed
+ ┃ ┣ 📜Closed_RF.ipynb
+ ┃ ┣ 📜Closed_RF_old.ipynb
+ ┃ ┣ 📜Closed_RF_selected10.ipynb
+ ┃ ┣ 📜Closed_SVM.ipynb
+ ┃ ┗ 📜baseline.ipynb
+ ┣ 📂Open_Binary
+ ┃ ┣ 📂baseline
+ ┃ ┃ ┗ 📜Open_Binary_KNN.ipynb
+ ┃ ┣ 📜Open2_Binary_RF_selected12.ipynb
+ ┃ ┣ 📜Open2_Binary_RF_selected6.ipynb
+ ┃ ┣ 📜Open_Binary_RF.ipynb
+ ┃ ┗ 📜Open_Binary_SVM.ipynb
+ ┣ 📂Open_Multi
+ ┃ ┣ 📜Open2_Multi_RF.ipynb
+ ┃ ┣ 📜Open_Multi_RF.ipynb
+ ┃ ┗ 📜Open_Multi_SVM.ipynb
+ ┣ 📂datasets
+ ┃ ┣ 📜binary_labels.csv
+ ┃ ┣ 📜final_labels.csv
+ ┃ ┣ 📜mon_features.csv
+ ┃ ┣ 📜mon_features_old.csv
+ ┃ ┣ 📜mon_labels.csv
+ ┃ ┣ 📜unmon3000_features.csv
+ ┃ ┣ 📜unmon3000_features_old.csv
+ ┃ ┣ 📜unmon_features.csv
+ ┃ ┗ 📜unmon_features_old.csv
+ ┣ 📂features
+ ┃ ┣ 📂feature_information
+ ┃ ┃ ┣ 📜combined_feature_information.ipynb
+ ┃ ┃ ┣ 📜comimage.png
+ ┃ ┃ ┣ 📜comimage2.png
+ ┃ ┃ ┣ 📜mon_feature_information.ipynb
+ ┃ ┃ ┣ 📜monimage.png
+ ┃ ┃ ┣ 📜monimage2.png
+ ┃ ┃ ┣ 📜unmon_feature_information.ipynb
+ ┃ ┃ ┗ 📜unmonimage.png
+ ┃ ┣ 📂original_datasets
+ ┃ ┃ ┣ 📜mon_standard.pkl
+ ┃ ┃ ┣ 📜unmon_standard10.pkl
+ ┃ ┃ ┗ 📜unmon_standard10_3000.pkl
+ ┃ ┣ 📜README.md
+ ┃ ┗ 📜feature_generator.ipynb
+ ┣ 📜README.md
+ ┗ 📜how_to_run.ipynb
   ```
 </div>
 </details>
@@ -122,12 +114,47 @@ Machine5
     * Perform prediction of open binary classification model > Extract the prediction result > Perform multi-classification based on this prediction result.  
 
 ### Results
-  * **Closed-Wold Multi Classification**
-  * **Open-World Binary Classification**
   * **Scenario 1**  
     * Multi-classification and binary classification do not consider the importance of the features used, resulting in relatively low accuracy.
+    * <details>
+      <summary>details(SVM)</summary>
+      <div markdown="1">
+
+        Accuracy (Tuned Model): 0.6993    
+        Precision: 0.6993  
+        Recall: 0.6254  
+        Confusion Matrix (Tuned Model):  
+        [[1686    3    3 ...    1    0    4]  
+        [   7   16    0 ...    0    0    2]  
+        [  10    0   31 ...    0    0    0]  
+        ...  
+        [  14    0    1 ...   17    0    0]  
+        [   2    0    0 ...    0   35    0]  
+        [   6    0    0 ...    1    0   25]]
+
+        ROC AUC: 0.4105  
+        PR AUC: 0.0071  
+        ![alt text](Scenario1_SVM.png)
+      </div>
+      </details>  
+    
   * **Scenario 2** 
     * The criteria not considered in Scenario 1 were applied, resulting in a relatively high accuracy. 
+    * <details>
+      <summary>details(RF)</summary>
+      <div markdown="1">
+
+      Accuracy: 0.8136  
+      Precision: 0.8657  
+      Recall: 0.7885  
+      Confusion Matrix:
+      ![alt text](Scenario2_RF.png)
+
+      ROC AUC: 0.3905  
+      Model PR AUC: 0.0054  
+      ![alt text](Scenario2_RF_2.png)
+      </div>
+      </details>  
     
   * Both open world multi classifications resulted in very low ROC and PR scores because the dataset was highly imbalanced (-1:remaining 95 classes = 10000:19000). 
 
@@ -147,8 +174,22 @@ Machine5
 
 
 ## How to Run 
-* 전반적인 파일 수정 필요(데이터셋 다운로드 부분)>완료
+### 1. Open and run `how_to_run.ipynb` to clone this repository
+  * <a href="https://colab.research.google.com/github/440g/Machine5/blob/main/how_to_run.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
+### 2. Feature generation
+  * Run `feature_generator.ipynb`(/content/drive/MyDrive/Machine5/featuers) and get `{mon_features, unmon_features, unmon3000_features}.ipynb`(/content/drive/MyDrive/Machine5/datasets)
+
+### 3. Scenario 1
+  * Closed: Run `{baseline, Closed_RF, Closed_SVM}.ipynb`(/content/drive/MyDrive/Machine5/Closed) 
+  * Open_Binary: Run `{Open_Binary_RF, Open_Binary_SVM}.ipynb`(/content/drive/MyDrive/Machine5/Open_Binary)
+  * Open_Multi: Run `{Open_Multi_RF, Open_Multi_SVM}.ipynb`(/content/drive/MyDrive/Machine5/Open_Multi)
+
+### 4. Scenario 2
+  * **Open_Binary model should be executed before Open_Multi model**
+  * Closed: Run `{baseline, Closed_RF, Closed_SVM}.ipynb`(/content/drive/MyDrive/Machine5/Closed)
+  * Open_Binary: Run `Open2_Binary_RF_selected12.ipynb`(/content/drive/MyDrive/Machine5/Open_Binary) and get `binary_labels.csv`(/content/drive/MyDrive/Machine5/datasets)
+  * Open_Multi: Run `{Open2_Multi_RF}.ipynb`(/content/drive/MyDrive/Machine5/Open_Multi) and get `final_labels.csv`(/content/drive/MyDrive/Machine5/datasets)
 
 
 
